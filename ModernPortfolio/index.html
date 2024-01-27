@@ -9,9 +9,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <title>Document</title>
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="./css/skin/color-1.css" class="alternate-style" title="color-1" disabled>    
+    <link rel="stylesheet" href="./css/skin/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/skin/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./css/skin/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./css/skin/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./css/style-switcher.css">
+    <title>Atlas</title>
   </head>
-  <body>
+  <body >
     <!-- =====Main Container Start===== -->
     <div class="main-container">
       <!-- ==== Aside Start ===== -->
@@ -24,19 +31,19 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i>About</a>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i>Services</a>
+            <a href="#services"><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-briefcase"></i>Portfolio</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-comments"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
           </li>
         </ul>
       </div>
@@ -44,14 +51,14 @@
       <!-- ==== Main Content Start ===== -->
       <div class="main-content">
         <!-- ===== Home Section Start ==== -->
-        <div class="home section ">
+        <div class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
                 <h3 class="hello">
                   Hello, my name is <span class="name">Antonio Azaf</span>
                 </h3>
-                <h3 class="my-profression">
+                <h3 class="my-profession">
                   i' m <span class="typing">Web Designer</span>
                 </h3>
                 <p>
@@ -59,10 +66,10 @@
                   years. My expertices its to create and website design, UX/UI
                   developer and much more...
                 </p>
-                <a href="#contact" class="btn hire-me">Hire Me</a>
+                <a href="#" class="btn">Downliad CV</a>
               </div>
               <div class="home-img padd-15">
-                <img src="./images/ANNTTONNIO2.jpg" alt="" />
+                <img src="./images/face.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -71,7 +78,7 @@
 
         <!-- ===== About Section Start ==== -->
 
-        <section class="about section hidden">
+        <section class="about section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -123,8 +130,7 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="" class="btn">Download CV</a>
-                        <a href="#contact" class="btn Hire-me">Hire Me</a>
+                        <a href="#contact" data-section-index="1"class="btn hire-me">Hire Me</a>
                       </div>
                     </div>
                   </div>
@@ -296,7 +302,7 @@
         </section>
         <!-- ===== About Section End ==== -->
         <!-- ===== Services Section Start ==== -->
-        <section class="service section">
+        <section class="service section" id="services">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -310,7 +316,7 @@
                   <div class="icon">
                     <i class="fa fa-mobile-alt"></i>
                   </div>
-                  <h4>We Design</h4>
+                  <h4>Web Design</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
               </div>
@@ -322,7 +328,7 @@
                   <div class="icon">
                     <i class="fa fa-laptop-code"></i>
                   </div>
-                  <h4>We Design</h4>
+                  <h4>Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
@@ -335,7 +341,7 @@
                   <div class="icon">
                     <i class="fa fa-palette"></i>
                   </div>
-                  <h4>We Design</h4>
+                  <h4>Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
@@ -348,7 +354,7 @@
                   <div class="icon">
                     <i class="fa fa-code"></i>
                   </div>
-                  <h4>We Design</h4>
+                  <h4>Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
@@ -361,7 +367,7 @@
                   <div class="icon">
                     <i class="fa fa-search"></i>
                   </div>
-                  <h4>We Design</h4>
+                  <h4>Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
@@ -375,7 +381,7 @@
                   <div class="icon">
                     <i class="fa fa-bullhorn"></i>
                   </div>
-                  <h4>We Design</h4>
+                  <h4>Web Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. et.
                   </p>
@@ -386,12 +392,198 @@
           </div>
         </section>
         <!-- ===== Services Section End ==== -->
+
+        <!-- ===== Portfolio Section Start ==== -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>
+                  My Last Projects :
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              
+              <!-- ===== Portfolio item Start ===== -->
+              
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="./images/ani1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- ===== Portfolio item End ===== -->              
+              <!-- ===== Portfolio item Start ===== -->
+              
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="./images/ani2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- ===== Portfolio item End ===== -->              
+              <!-- ===== Portfolio item Start ===== -->
+              
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="./images/ani3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- ===== Portfolio item End ===== -->              
+              <!-- ===== Portfolio item Start ===== -->
+              
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="./images/ani4.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- ===== Portfolio item End ===== -->              
+              <!-- ===== Portfolio item Start ===== -->
+              
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="./images/ani5.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- ===== Portfolio item End ===== -->              
+              <!-- ===== Portfolio item Start ===== -->
+              
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="./images/ani6.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- ===== Portfolio item End ===== -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Portfolio Section End ==== -->
+
+        <!-- ===== Contact Section Start ==== -->
+        <section class="contact section " id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Have You Any Questions?</h3>
+            <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+            <div class="row">
+              <!-- ====== Contact info item Start ======= -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call Us On</h4>
+                <p>+58 4249078597</p>
+              </div>
+              <!-- ====== Contact info item End ======= -->
+              <!-- ====== Contact info item Start ======= -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>Office</h4>
+                <p>Venezuela</p>
+              </div>
+              <!-- ====== Contact info item End ======= -->
+              <!-- ====== Contact info item Start ======= -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>rafaazaf93@gmail.com</p>
+              </div>
+              <!-- ====== Contact info item End ======= -->
+              <!-- ====== Contact info item Start ======= -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                <h4>Website</h4>
+                <p>www.domain.com</p>
+              </div>
+              <!-- ====== Contact info item End ======= -->
+            </div>
+            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGE</h4>
+            <!-- ===== Contact Form ===== -->
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-goup">
+                      <input type="text" name="" class="form-control" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-goup">
+                      <input type="email" name="" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-goup">
+                      <input type="text" name="" class="form-control" placeholder="Subject">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-goup">
+                      <textarea name="" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ===== Contact Section End ==== -->
       </div>
       <!-- ==== Main Content End ===== -->
     </div>
-    <!-- =====Main Container End===== -->
+    <!-- ===== Main Container End===== -->
+    <!-- ===== Style Switcher Start ===== -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
 
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas "></i>
+      </div>
+      <h4>Theme Color</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <!-- ===== Style Switcher End ===== -->
     <!-- ====JS Files===== -->
-    <script src="/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/style-switcher.js"></script>
   </body>
 </html>
